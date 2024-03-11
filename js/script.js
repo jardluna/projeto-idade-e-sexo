@@ -16,6 +16,7 @@ function verificar() {
             genero = 'homem'
             res.style.color = 'dodgerblue'
             res.style.fontWeight = 'bold'
+            document.body.style.backgroundColor = 'dodgerblue'
             if (idade >= 0 && idade < 5) {
                 //BEBE
                 res.innerHTML = `Detectamos um bebê com ${idade} anos`
@@ -40,12 +41,14 @@ function verificar() {
                 //INTERROGAÇÃO
                 res.innerHTML = `Você tem ${idade} anos, e ainda está vivo?`
                 res.style.color = 'black'
+                document.body.style.backgroundColor = 'wheat'
                 img.setAttribute('src', '../images/interrogacao.png')
             }
         } else if (fSex[1].checked) {
             genero = 'mulher'
             res.style.color = 'palevioletred'
             res.style.fontWeight = 'bold'
+            document.body.style.backgroundColor = 'palevioletred'
             if (idade >= 0 && idade < 5) {
                 //BEBE
                 res.innerHTML = `Detectamos um bebê com ${idade} anos`
@@ -70,6 +73,7 @@ function verificar() {
                 //INTERROGAÇÃO
                 res.innerHTML = `Você tem ${idade} anos, e ainda está vivo?`
                 res.style.color = 'black'
+                document.body.style.backgroundColor = 'wheat'
                 img.setAttribute('src', '../images/interrogacao.png')
             }
         }
