@@ -14,7 +14,7 @@ function verificar() {
         img.setAttribute('id', 'foto')
         if (fSex[0].checked) {
             genero = 'homem'
-            res.style.color = 'blue'
+            res.style.color = 'dodgerblue'
             res.style.fontWeight = 'bold'
             if (idade >= 0 && idade < 5) {
                 //BEBE
