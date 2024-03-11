@@ -32,10 +32,15 @@ function verificar() {
                 //ADULTO
                 res.innerHTML = `Detectamos um adulto com ${idade} anos`
                 img.setAttribute('src', '../images/adultoH.png')
-            } else {
+            } else if (idade < 120) {
                 //IDOSO
                 res.innerHTML = `Detectamos um idoso com ${idade} anos`
                 img.setAttribute('src', '../images/idosoH.png')
+            } else {
+                //INTERROGAÇÃO
+                res.innerHTML = `Você tem ${idade} anos, e ainda está vivo?`
+                res.style.color = 'black'
+                img.setAttribute('src', '../images/interrogacao.png')
             }
         } else if (fSex[1].checked) {
             genero = 'mulher'
@@ -57,10 +62,15 @@ function verificar() {
                 //ADULTO
                 res.innerHTML = `Detectamos um adulto com ${idade} anos`
                 img.setAttribute('src', '../images/adultoM.png')
-            } else {
+            } else if (idade < 120) {
                 //IDOSO
                 res.innerHTML = `Detectamos uma idosa com ${idade} anos`
                 img.setAttribute('src', '../images/idosoM.png')
+            } else {
+                //INTERROGAÇÃO
+                res.innerHTML = `Você tem ${idade} anos, e ainda está vivo?`
+                res.style.color = 'black'
+                img.setAttribute('src', '../images/interrogacao.png')
             }
         }
         res.appendChild(img)
